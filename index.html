@@ -4,64 +4,69 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bachili Kallappa N – Portfolio</title>
-  <meta name="description" content="Personal portfolio of Your Name – projects, skills, experience, and contact." />
-  <meta property="og:title" content="Bachili Kallappa – Portfolio" />
+  <meta name="description" content="Portfolio of Bachili Kallappa N – projects, skills, experience, and contact." />
+  <meta property="og:title" content="Bachili Kallappa N – Portfolio" />
   <meta property="og:description" content="Projects, skills, experience, and contact." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0ea5e9" />
   <style>
     :root{
-      --bg: #0b1020;
-      --panel: #0f172a;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --brand: #0ea5e9;
-      --brand-2: #22d3ee;
-      --ring: rgba(14,165,233,.4);
+      --bg: #0b1020; --panel: #0f172a; --text: #e5e7eb; --muted: #9ca3af;
+      --brand: #0ea5e9; --brand-2: #22d3ee; --ring: rgba(14,165,233,.4);
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:radial-gradient(1200px 600px at 80% -10%,rgba(34,211,238,.08),transparent 60%),radial-gradient(800px 400px at -10% 20%,rgba(14,165,233,.12),transparent 60%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue",Arial}
+    html,body{
+      margin:0;padding:0;
+      background:
+        radial-gradient(1200px 600px at 80% -10%,rgba(34,211,238,.08),transparent 60%),
+        radial-gradient(800px 400px at -10% 20%,rgba(14,165,233,.12),transparent 60%),
+        var(--bg);
+      color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue",Arial
+    }
     a{color:var(--brand);text-decoration:none}
     a:hover{text-decoration:underline}
-    img{max-width:100%;display:block}
+    img{max-width:100%;height:auto;display:block}
     .container{max-width:1100px;margin:0 auto;padding:24px}
-    header{position:sticky;top:0;backdrop-filter:blur(8px);background:linear-gradient(180deg,rgba(11,16,32,.8),rgba(11,16,32,.55));border-bottom:1px solid rgba(255,255,255,.08);z-index:10}
+    header{
+      position:sticky;top:0;
+      backdrop-filter:blur(8px);
+      background:linear-gradient(180deg,rgba(11,16,32,.8),rgba(11,16,32,.55));
+      border-bottom:1px solid rgba(255,255,255,.08);z-index:10
+    }
     .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
     .brand{display:flex;align-items:center;gap:12px}
     .brand .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 0 20px var(--brand)}
-    .brand h1{font-size:18px;margin:0;font-weight:600}
-    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    .brand h1{font-size:clamp(16px,2.5vw,18px);margin:0;font-weight:600}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
     nav a{color:var(--text);opacity:.9}
     nav a.active, nav a:focus{color:white}
 
     .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;padding:64px 0}
     .tag{display:inline-flex;gap:8px;align-items:center;font-size:12px;color:var(--muted);border:1px solid rgba(255,255,255,.1);padding:6px 10px;border-radius:999px}
-    .title{font-size:44px;line-height:1.15;margin:14px 0 8px}
-    .subtitle{color:var(--muted);margin:0 0 22px}
+    .title{font-size:clamp(28px,5.5vw,44px);line-height:1.15;margin:14px 0 8px}
+    .subtitle{color:var(--muted);margin:0 0 22px;font-size:clamp(14px,2.8vw,16px)}
     .cta{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001018;border:none;padding:12px 16px;border-radius:12px;font-weight:600;box-shadow:0 6px 20px rgba(34,211,238,.22);cursor:pointer}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001018;border:none;padding:12px 16px;border-radius:12px;font-weight:600;box-shadow:0 6px 20px rgba(34,211,238,.22);cursor:pointer}
     .btn.secondary{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.14)}
 
     .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px}
     .grid{display:grid;gap:18px}
 
     .section{padding:26px 0 16px}
-    .section h2{font-size:22px;margin:4px 0 14px}
+    .section h2{font-size:clamp(18px,3.5vw,22px);margin:4px 0 14px}
     .skills{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
-    .skill{display:flex;align-items:center;gap:10px;padding:12px;border-radius:12px;border:1px dashed rgba(255,255,255,.12)}
+    .skill{display:flex;align-items:center;gap:10px;padding:12px;border-radius:12px;border:1px dashed rgba(255,255,255,.12);font-size:clamp(14px,3vw,16px)}
 
     .projects{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-    .project img{border-radius:12px;border:1px solid rgba(255,255,255,.08)}
-    .project h3{margin:10px 0 6px;font-size:18px}
+    .project h3{margin:10px 0 6px;font-size:clamp(16px,3.3vw,18px)}
     .project p{margin:0 0 10px;color:var(--muted)}
-    .project .meta{display:flex;gap:10px;flex-wrap:wrap}
-    .chip{font-size:12px;border:1px solid rgba(255,255,255,.14);padding:4px 8px;border-radius:999px;color:var(--muted)}
 
     .timeline{position:relative}
     .timeline::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:linear-gradient(var(--brand),transparent)}
     .tl-item{position:relative;padding-left:34px;margin:0 0 16px}
     .tl-item::before{content:"";position:absolute;left:4px;top:6px;width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 0 20px var(--brand)}
-    .tl-item h3{margin:0;font-size:16px}
+    .tl-item h3{margin:0;font-size:clamp(15px,3.2vw,16px)}
     .tl-item .when{font-size:12px;color:var(--muted)}
 
     .contact{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
@@ -74,10 +79,23 @@
 
     .top{position:fixed;right:16px;bottom:16px;border-radius:50%;width:44px;height:44px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 10px 25px rgba(14,165,233,.35);cursor:pointer}
 
+    /* ✅ Mobile refinements */
     @media (max-width: 900px){
-      .hero{grid-template-columns:1fr}
+      .container{padding:18px}
+      .hero{grid-template-columns:1fr;gap:20px;padding:36px 0}
+      .hero > div:first-child{text-align:center}
+      .tag{margin:0 auto}
+      .cta{justify-content:center}
+      .btn{flex:1 1 100%;min-width:200px}
       .contact{grid-template-columns:1fr}
       form .row{grid-template-columns:1fr}
+      nav ul{justify-content:center;gap:12px}
+      header{position:sticky}
+    }
+    @media (max-width: 420px){
+      .container{padding:14px}
+      .btn{width:100%}
+      .brand h1{max-width:70vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     }
   </style>
 </head>
@@ -110,11 +128,12 @@
         <div class="cta">
           <a class="btn" href="#projects">View Projects</a>
           <a class="btn secondary" href="#contact">Contact Me</a>
-          <a class="btn secondary" href="Bachili Kallappa N_2022_BE_ME.pdf" download>Download Résumé</a>
+          <a class="btn secondary" href="Bachili-Kallappa-N_2022_BE_ME.pdf" download>Download Résumé</a>
         </div>
       </div>
       <div class="card" aria-label="Profile overview">
-        <img src="WhatsApp Image 2025-10-27 at 10.40.00 PM.jpeg" alt="Profile photo" />
+        <!-- Tip: rename file to avoid spaces, e.g., profile.jpg -->
+        <img src="profile.jpg" alt="Profile photo" />
         <div style="padding:10px 4px 0;color:var(--muted);font-size:14px">Available for freelance • Remote / Onsite</div>
       </div>
     </section>
@@ -152,9 +171,7 @@
           <div class="meta">
             <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span>
           </div>
-          <p>
-            <a href="#">Live</a> · <a href="#">Code</a>
-          </p>
+          <p><a href="#">Live</a> · <a href="#">Code</a></p>
         </article>
 
         <article class="card project">
@@ -164,9 +181,7 @@
           <div class="meta">
             <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">API</span>
           </div>
-          <p>
-            <a href="#">Live</a> · <a href="#">Code</a>
-          </p>
+          <p><a href="#">Live</a> · <a href="#">Code</a></p>
         </article>
 
         <article class="card project">
@@ -176,9 +191,7 @@
           <div class="meta">
             <span class="chip">Next.js</span><span class="chip">SEO</span><span class="chip">SSR</span>
           </div>
-          <p>
-            <a href="#">Live</a> · <a href="#">Code</a>
-          </p>
+          <p><a href="#">Live</a> · <a href="#">Code</a></p>
         </article>
       </div>
     </section>
@@ -220,9 +233,7 @@
             <textarea required name="message" placeholder="Tell me about your project…"></textarea>
           </label>
           <button class="btn" type="submit">Send Message</button>
-          <p style="margin:8px 0 0;color:var(--muted);font-size:12px">
-            Form powered by Formspree.
-          </p>
+          <p style="margin:8px 0 0;color:var(--muted);font-size:12px">Form powered by Formspree.</p>
         </form>
 
         <div class="card">
@@ -235,7 +246,7 @@
   </main>
 
   <footer>
-    <div class="container">© <span id="year"></span> Your Name. All rights reserved.</div>
+    <div class="container">© <span id="year"></span> Bachili Kallappa N. All rights reserved.</div>
   </footer>
 
   <a class="top" href="#home" aria-label="Back to top">▲</a>
@@ -263,5 +274,3 @@
   </script>
 </body>
 </html>
-
-
